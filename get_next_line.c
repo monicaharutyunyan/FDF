@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   get_next_line.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: monicaharutyunyan <monicaharutyunyan@st    +#+  +:+       +#+        */
+/*   By: mharutyu <mharutyu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/18 17:15:41 by monicaharut       #+#    #+#             */
-/*   Updated: 2022/10/19 17:40:50 by monicaharut      ###   ########.fr       */
+/*   Updated: 2022/10/24 20:36:17 by mharutyu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,5 +53,6 @@ char	*get_next_line(int fd)
 		if (c == '\n')
 			return (line);
 	}
+	printf("%s\n", line);
 	return (line);
 }

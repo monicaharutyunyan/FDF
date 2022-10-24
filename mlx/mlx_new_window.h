@@ -11,8 +11,8 @@
 
 @interface NSWindowEvent : NSWindow
 {
-  func_t	event_funct[MAX_EVENT];
-  void		*(event_param[MAX_EVENT]);
+  func_t	event_funct[max_f_EVENT];
+  void		*(event_param[max_f_EVENT]);
   int		keyrepeat;
   int		keyflag;
   int		size_x;
