@@ -6,7 +6,7 @@
 /*   By: mharutyu <mharutyu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/20 17:28:22 by monicaharut       #+#    #+#             */
-/*   Updated: 2022/10/20 16:48:15 by mharutyu         ###   ########.fr       */
+/*   Updated: 2022/11/01 14:41:53 by mharutyu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ size_t	count_of_words(const char *string, char del)
 	size_t	count;
 
 	count = 0;
+	if (!string || !*string)
+		return (0);
 	while (*string != '\0')
 	{
 		if (*string != del && (*(string + 1) == del || *(string + 1) == '\0'))

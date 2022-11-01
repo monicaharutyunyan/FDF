@@ -6,7 +6,7 @@
 /*   By: mharutyu <mharutyu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 18:42:42 by mharutyu          #+#    #+#             */
-/*   Updated: 2022/10/26 17:46:48 by mharutyu         ###   ########.fr       */
+/*   Updated: 2022/11/01 15:06:37 by mharutyu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ int	esc(t_fdf *data)
 		free(data->z_matrix[i]);
 		i++;
 	}
-	free(data->z_matrix[i]);
+	free(data->z_matrix);
 	exit(0);
 	return (0);
 }

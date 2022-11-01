@@ -7,7 +7,7 @@ NAME	= libft.a
 
 CC		= gcc
 
-CFLAGS	= -Wall -Wextra -Werror
+CFLAGS	= -Wall -Wextra  -Werror
 
 SRCS	= $(wildcard *.c)
 

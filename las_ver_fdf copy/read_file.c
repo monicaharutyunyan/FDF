@@ -6,7 +6,7 @@
 /*   By: mharutyu <mharutyu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/20 10:32:37 by monicaharut       #+#    #+#             */
-/*   Updated: 2022/10/26 20:30:09 by mharutyu         ###   ########.fr       */
+/*   Updated: 2022/11/01 15:03:30 by mharutyu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,7 @@ int	get_heigth(char *file_name)
 		free(line);
 		line = get_next_line(fd);
 	}
+	free(line);
 	close(fd);
 	return (heigth);
 }
@@ -40,6 +41,11 @@ int	get_width(char *file_name)
 	fd = open(file_name, O_RDONLY, 0);
 	line = get_next_line(fd);
 	width = count_of_words(line, ' ');
+	if (width == 0)
+	{
+		ft_printf("Error\n");
+		exit(1);
+	}
 	free(line);
 	close(fd);
 	return (width);

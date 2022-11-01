@@ -6,7 +6,7 @@
 /*   By: mharutyu <mharutyu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/19 17:42:34 by monicaharut       #+#    #+#             */
-/*   Updated: 2022/10/26 17:46:57 by mharutyu         ###   ########.fr       */
+/*   Updated: 2022/11/01 14:51:43 by mharutyu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,9 +28,9 @@ int	main(int ac, char **av)
 {
 	t_fdf	*data;
 
-	if (ac == 1 || ac > 2)
+	if (ac == 1 || ac > 2 || (ft_strlen(av[1]) <= 5))
 	{
-		write(1, "ERROR!\n", 7);
+		write(1, "Error!\n", 7);
 		exit(0);
 	}
 	data = (t_fdf *)malloc(sizeof (t_fdf));

@@ -6,7 +6,7 @@
 /*   By: mharutyu <mharutyu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/26 14:47:28 by mharutyu          #+#    #+#             */
-/*   Updated: 2022/10/28 13:59:11 by mharutyu         ###   ########.fr       */
+/*   Updated: 2022/11/01 15:05:50 by mharutyu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,8 @@ void	map_check(char *file_name)
 			ft_putstr_fd("Map isn't valid, somthing wrong in this map!", 1);
 			exit(0);
 		}
+		free(line);
 		line = get_next_line(fd);
 	}
+	free(line);
 }
