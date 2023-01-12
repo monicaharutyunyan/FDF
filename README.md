@@ -13,3 +13,5 @@ make
 ./fdf <map_file>
 Exemple:
 `./fdf ./MGDS_WHOLE_WORLD_OCEAN1_XXL.fdf`
+
+![lJyeo4E](https://user-images.githubusercontent.com/80643951/212070897-a983751a-b734-4b36-9fdb-55aabdd52df6.png)
