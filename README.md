@@ -1,5 +1,5 @@
 # FDF
-"Fil de Fer", my first graphical project (got 123/125).
+"Fil de Fer", my first graphical project (got 100/125).
 A wireframe visualiser that reads 'heightmaps' 
 
 ### How to compile
